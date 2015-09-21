@@ -24,15 +24,15 @@ var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight');
 if (process.env.INSIGHT_NETWORK === 'livenet') {
   env = 'livenet';
   db = home;
-  port = '3000';
-  b_port = '8332';
-  p2p_port = '8333';
+  port = '3100';
+  b_port = '22555';
+  p2p_port = '22556';
 } else {
   env = 'testnet';
   db = home + '/testnet';
-  port = '3001';
-  b_port = '18332';
-  p2p_port = '18333';
+  port = '3101';
+  b_port = '44555';
+  p2p_port = '44556';
 }
 port = parseInt(process.env.INSIGHT_PORT) || port;
 
@@ -57,9 +57,9 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 if (!dataDir) {
-  if (isWin) dataDir = '%APPDATA%\\Bitcoin\\';
-  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Bitcoin/';
-  if (isLinux) dataDir = process.env.HOME + '/.bitcoin/';
+  if (isWin) dataDir = '%APPDATA%\\Dogecoin\\';
+  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/Dogecoin/';
+  if (isLinux) dataDir = process.env.HOME + '/.dogecoin/';
 }
 dataDir += network === 'testnet' ? 'testnet3' : '';
 
