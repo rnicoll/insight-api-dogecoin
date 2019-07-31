@@ -48,7 +48,7 @@
     "base58-native": "0.1.2",
     "bignum": "*",
     "morgan": "*",
-    "bitcore": "git://github.com/bitpay/bitcore.git#51c53b16ced6bcaf4b78329955d6814579fe4ee9",
+    "dogecore": "git://github.com/rnicoll/dogecore.git#5e85dedc6b6a2e4897e9466c4905d6bf2f71fed5",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "^2.3.0",
